@@ -64,7 +64,7 @@ app.post("/order", async (req, res) => {
             merchantUserId: MUID,
             name: name,
             amount: amount * 100, // convert to paise
-            redirectUrl: `http://localhost:5000/status/?id=${transactionId}`, // <-- Redirect to backend first
+            redirectUrl: `https://get-me-a-chai-avdhesh-kumarr.netlify.app/status/?id=${transactionId}`, // <-- Redirect to backend first
             redirectMode: 'POST',
             mobileNumber: number,
             paymentInstrument: {
