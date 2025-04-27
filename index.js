@@ -123,7 +123,7 @@ app.post("/status", async (req, res) => {
 
         const response = await axios.request(options);
 
-        const baseRedirectUrl = "http://localhost:5173"; // React App
+        const baseRedirectUrl = "https://get-me-a-chai-avdhesh-kumarr.netlify.app/"; // React App
         const supporter = await Supporter.findOne({ transactionId: merchantTransactionId });
 
         if (response.data.success && supporter) {
